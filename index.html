@@ -6,18 +6,31 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900&display=swap" rel="stylesheet">
         <title>Gryaznov • Projects</title>
     </head>
 
     <body>
+      
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+      
+      <script type="text/javascript" src="assets/js/text.js">
+
+        <svg id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+            </filter>
+          </defs>
+        </svg>
+
+      </script>
     
-        <section>
-            <div class="content">
-              <h2>4o4</h2>
-              <h2>4o4</h2>
-            </div>
-          </section>
-    
-        </body>
+    </body>
 </html>
