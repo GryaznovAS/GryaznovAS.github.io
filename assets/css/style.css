@@ -68,3 +68,10 @@ body {
 
     user-select: none;
 }
+
+.pc__notify {
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+
+  margin-top: auto;
+}
