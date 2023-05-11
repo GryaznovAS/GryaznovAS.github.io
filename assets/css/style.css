@@ -6,6 +6,20 @@ body {
   height: 1800px;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid white;  /* creates padding around scroll thumb */
+}
+
 .container {
   max-width: 1440px;
   position: relative;
@@ -18,6 +32,9 @@ body {
   height: 30px;
   left: 30px;
   top: 25px;
+  
+  opacity: 0;
+  animation: animate_blocks 3s forwards;
 }
 
 .about {
@@ -32,8 +49,16 @@ body {
   font-size: 20px;
   line-height: 24px;
 
-  color: #FFFFFF;
+  transition: 1s;
 
+  color: #FFFFFF;
+  
+  opacity: 0;
+  animation: animate_blocks 3s forwards;
+}
+
+.about:hover {
+  transform: scale(1.2);
 }
 
 .projects {
@@ -48,8 +73,16 @@ body {
   font-size: 20px;
   line-height: 24px;
 
-  color: #FFFFFF;
+  transition: 1s;
 
+  color: #FFFFFF;
+  
+  opacity: 0;
+  animation: animate_blocks 3s forwards;
+}
+
+.projects:hover {
+  transform: scale(1.2);
 }
 
 .contacts {
@@ -64,7 +97,16 @@ body {
   font-size: 20px;
   line-height: 24px;
 
+  transition: 1s;
+
   color: #FFFFFF;
+  
+  opacity: 0;
+  animation: animate_blocks 3s forwards;
+}
+
+.contacts:hover {
+  transform: scale(1.2);
 }
 
 .brand {
@@ -73,6 +115,9 @@ body {
   height: 700px;
   left: 185px;
   top: 125px;
+  
+  opacity: 0;
+  animation: animate_blocks 3s forwards;
 }
 
 .soon {
@@ -90,4 +135,29 @@ body {
   text-align: center;
 
   color: #FFFFFF;
+
+  overflow: hidden;
+
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  animation: animate 5s linear infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes animate_blocks {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
