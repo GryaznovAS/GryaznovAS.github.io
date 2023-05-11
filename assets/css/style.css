@@ -1,77 +1,93 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-
-html {
-    height:100%;
-  }
-  
-  .bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-45deg, #000 50%, #FFCC00 50%);
-    bottom:0;
-    left:-100%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-  }
-  
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:14s;
-  }
-  
-  .bg3 {
-    animation-duration:15s;
-  }
-  
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900&display=swap");
 
 body {
-    margin: 0px;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  height: 1800px;
 }
 
-#container {
-    position: absolute;
-    margin: auto;
-    width: 100vw;
-    height: 80pt;
-    top: 0;
-    bottom: 0;
-
-    filter: url(#threshold) blur(0.6px);
+.container {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
 }
 
-#text1,
-#text2 {
-    position: absolute;
-    width: 100%;
-    display: inline-block;
-
-    font-family: "Raleway", sans-serif;
-    font-size: 60pt;
-    
-    color: #FFF;
-
-    text-align: center;
-
-    user-select: none;
+.logo {
+  position: absolute;
+  width: 152px;
+  height: 30px;
+  left: 30px;
+  top: 25px;
 }
 
-.pc__notify {
-  font-family: "Raleway", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+.about {
+  position: absolute;
+  width: 65px;
+  height: 24px;
+  left: 1064px;
+  top: 15px;
 
-  margin-top: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+
+}
+
+.projects {
+  position: absolute;
+  width: 87px;
+  height: 24px;
+  left: 1179px;
+  top: 15px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+
+}
+
+.contacts {
+  position: absolute;
+  width: 94px;
+  height: 24px;
+  left: 1316px;
+  top: 15px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+}
+
+.brand {
+  position: absolute;
+  width: 1070px;
+  height: 700px;
+  left: 185px;
+  top: 125px;
+}
+
+.soon {
+  position: absolute;
+  width: 352px;
+  height: 59px;
+  left: 544px;
+  top: 1250px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  
+  text-align: center;
+
+  color: #FFFFFF;
 }
