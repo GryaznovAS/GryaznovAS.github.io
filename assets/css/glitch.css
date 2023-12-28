@@ -418,3 +418,9 @@ body {
 .con-b-gas {
     transition: 1s;
 }
+
+.strokeme {
+    color: black;
+    background-color: black;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
