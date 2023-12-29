@@ -429,3 +429,31 @@ body {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+@media screen and (max-width: 600px) {
+
+    .mai-b-gas {
+        display: none;
+    }
+
+    .coc-b-gas {
+        display: none;
+    }
+
+    .col-5 {
+        width: auto;
+    }
+
+    .mepic {
+        display: none;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .aboutbl {
+        text-align: center;
+    }
+
+}
